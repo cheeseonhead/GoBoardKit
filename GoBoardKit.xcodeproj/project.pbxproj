@@ -6,10 +6,26 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		34A4BB0F20EEDA3A00ACA759 /* GoBoardKitUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 34A4BB1020EEDA3A00ACA759 /* Build configuration list for PBXAggregateTarget "GoBoardKitUniversal" */;
+			buildPhases = (
+				34A4BB1320EEDA4500ACA759 /* Run Script */,
+			);
+			dependencies = (
+			);
+			name = GoBoardKitUniversal;
+			productName = GoBoardKitUniversal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		34A4BAFA20EED6F600ACA759 /* GoBoardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A4BAF020EED6F600ACA759 /* GoBoardKit.framework */; };
 		34A4BAFF20EED6F600ACA759 /* GoBoardKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4BAFE20EED6F600ACA759 /* GoBoardKitTests.swift */; };
 		34A4BB0120EED6F600ACA759 /* GoBoardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A4BAF320EED6F600ACA759 /* GoBoardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34A4BB0B20EED92400ACA759 /* GoBoardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4BB0A20EED92400ACA759 /* GoBoardScene.swift */; };
+		34A4BB0E20EED93B00ACA759 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A4BB0D20EED93B00ACA759 /* SpriteKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +45,8 @@
 		34A4BAF920EED6F600ACA759 /* GoBoardKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoBoardKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A4BAFE20EED6F600ACA759 /* GoBoardKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBoardKitTests.swift; sourceTree = "<group>"; };
 		34A4BB0020EED6F600ACA759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A4BB0A20EED92400ACA759 /* GoBoardScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBoardScene.swift; sourceTree = "<group>"; };
+		34A4BB0D20EED93B00ACA759 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A4BB0E20EED93B00ACA759 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +75,7 @@
 				34A4BAF220EED6F600ACA759 /* GoBoardKit */,
 				34A4BAFD20EED6F600ACA759 /* GoBoardKitTests */,
 				34A4BAF120EED6F600ACA759 /* Products */,
+				34A4BB0C20EED93B00ACA759 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +93,7 @@
 			children = (
 				34A4BAF320EED6F600ACA759 /* GoBoardKit.h */,
 				34A4BAF420EED6F600ACA759 /* Info.plist */,
+				34A4BB0A20EED92400ACA759 /* GoBoardScene.swift */,
 			);
 			path = GoBoardKit;
 			sourceTree = "<group>";
@@ -84,6 +105,14 @@
 				34A4BB0020EED6F600ACA759 /* Info.plist */,
 			);
 			path = GoBoardKitTests;
+			sourceTree = "<group>";
+		};
+		34A4BB0C20EED93B00ACA759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34A4BB0D20EED93B00ACA759 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +177,12 @@
 				TargetAttributes = {
 					34A4BAEF20EED6F600ACA759 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					34A4BAF820EED6F600ACA759 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					34A4BB0F20EEDA3A00ACA759 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -168,6 +201,7 @@
 			targets = (
 				34A4BAEF20EED6F600ACA759 /* GoBoardKit */,
 				34A4BAF820EED6F600ACA759 /* GoBoardKitTests */,
+				34A4BB0F20EEDA3A00ACA759 /* GoBoardKitUniversal */,
 			);
 		};
 /* End PBXProject section */
@@ -189,11 +223,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34A4BB1320EEDA4500ACA759 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"GoBoardKit\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"GoBoardKit\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/GoBoardKit.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/GoBoardKit.framework/Modules/GoBoardKit.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/GoBoardKit.framework/Modules/GoBoardKit.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/GoBoardKit.framework/GoBoardKit\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/GoBoardKit.framework/GoBoardKit\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/GoBoardKit.framework/GoBoardKit\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/GoBoardKit.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		34A4BAEB20EED6F600ACA759 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A4BB0B20EED92400ACA759 /* GoBoardScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -339,6 +391,7 @@
 		34A4BB0520EED6F600ACA759 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -348,6 +401,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GoBoardKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheeseonhead.GoBoardKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +419,7 @@
 		34A4BB0620EED6F600ACA759 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,6 +429,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GoBoardKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +446,7 @@
 		34A4BB0820EED6F600ACA759 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77Q2XB2RSV;
 				INFOPLIST_FILE = GoBoardKitTests/Info.plist;
@@ -407,6 +465,7 @@
 		34A4BB0920EED6F600ACA759 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77Q2XB2RSV;
 				INFOPLIST_FILE = GoBoardKitTests/Info.plist;
@@ -419,6 +478,24 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34A4BB1120EEDA3A00ACA759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77Q2XB2RSV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		34A4BB1220EEDA3A00ACA759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77Q2XB2RSV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -448,6 +525,15 @@
 			buildConfigurations = (
 				34A4BB0820EED6F600ACA759 /* Debug */,
 				34A4BB0920EED6F600ACA759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34A4BB1020EEDA3A00ACA759 /* Build configuration list for PBXAggregateTarget "GoBoardKitUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A4BB1120EEDA3A00ACA759 /* Debug */,
+				34A4BB1220EEDA3A00ACA759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
