@@ -12,13 +12,12 @@ import SpriteKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sceneView: SKView!
+    
     override func viewDidLoad() {
-        
-        guard let view = view as? SKView else { return }
-        
         let scene = GoBoardScene(size: view.bounds.size)
         
-        view.presentScene(scene)
+        sceneView.presentScene(scene)
     }
 }
 

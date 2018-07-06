@@ -18,7 +18,7 @@ private enum Style {
 }
 
 extension SKTexture {
-    static func gridTexture(fittingSize: CGSize, rows: Int, cols: Int) -> SKTexture? {
+    static func gridTexture(fittingSize: CGSize, rows: Int, cols: Int) -> SKTexture {
         let spacing = minSpacing(for: fittingSize, rows: rows, cols: cols)
         let gridSize = size(for: spacing, rows: rows, cols: cols)
         
@@ -26,7 +26,7 @@ extension SKTexture {
         UIGraphicsBeginImageContext(gridSize)
         
         guard let context = UIGraphicsGetCurrentContext() else {
-            return nil
+            preconditionFailure("Context nil")
         }
         
         let bezierPath = UIBezierPath()
