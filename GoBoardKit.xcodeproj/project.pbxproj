@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		345DD51120EF107800AEE0B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345DD51020EF107800AEE0B1 /* Assets.xcassets */; };
+		345DD51720EF159200AEE0B1 /* GridPositionerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DD51620EF159200AEE0B1 /* GridPositionerTests.swift */; };
 		34A4BAFA20EED6F600ACA759 /* GoBoardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A4BAF020EED6F600ACA759 /* GoBoardKit.framework */; };
 		34A4BAFF20EED6F600ACA759 /* GoBoardKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4BAFE20EED6F600ACA759 /* GoBoardKitTests.swift */; };
 		34A4BB0120EED6F600ACA759 /* GoBoardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A4BAF320EED6F600ACA759 /* GoBoardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -70,6 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		345DD51020EF107800AEE0B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		345DD51620EF159200AEE0B1 /* GridPositionerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPositionerTests.swift; sourceTree = "<group>"; };
 		34A4BAF020EED6F600ACA759 /* GoBoardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoBoardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A4BAF320EED6F600ACA759 /* GoBoardKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoBoardKit.h; sourceTree = "<group>"; };
 		34A4BAF420EED6F600ACA759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				34A4BB1E20EEE58800ACA759 /* GridNode.swift */,
 				34A4BB2020EEE6E600ACA759 /* GridPositioner.swift */,
 				34A4BB2220EEE76F00ACA759 /* SKTexture+Grid.swift */,
+				345DD51020EF107800AEE0B1 /* Assets.xcassets */,
 			);
 			path = GoBoardKit;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			children = (
 				34A4BAFE20EED6F600ACA759 /* GoBoardKitTests.swift */,
 				34A4BB0020EED6F600ACA759 /* Info.plist */,
+				345DD51620EF159200AEE0B1 /* GridPositionerTests.swift */,
 			);
 			path = GoBoardKitTests;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345DD51120EF107800AEE0B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A4BAFF20EED6F600ACA759 /* GoBoardKitTests.swift in Sources */,
+				345DD51720EF159200AEE0B1 /* GridPositionerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

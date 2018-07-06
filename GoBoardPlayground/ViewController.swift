@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sceneView: SKView!
     
     override func viewDidLoad() {
-        let scene = GoBoardScene(size: view.bounds.size)
+        let scene = GoBoardScene(rows: 19, columns: 19)
         
         sceneView.presentScene(scene)
     }
