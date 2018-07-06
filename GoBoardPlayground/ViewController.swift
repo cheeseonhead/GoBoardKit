@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import GoBoardKit
+import SpriteKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        guard let view = view as? SKView else { return }
+        
+        let scene = GoBoardScene(size: view.bounds.size)
+        
+        view.presentScene(scene)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
