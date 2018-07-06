@@ -26,6 +26,16 @@
 		34A4BB0120EED6F600ACA759 /* GoBoardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A4BAF320EED6F600ACA759 /* GoBoardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34A4BB0B20EED92400ACA759 /* GoBoardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4BB0A20EED92400ACA759 /* GoBoardScene.swift */; };
 		34A4BB0E20EED93B00ACA759 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A4BB0D20EED93B00ACA759 /* SpriteKit.framework */; };
+		34A4BB1F20EEE58800ACA759 /* GridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4BB1E20EEE58800ACA759 /* GridNode.swift */; };
+		34A4BB2120EEE6E600ACA759 /* GridPositioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4BB2020EEE6E600ACA759 /* GridPositioner.swift */; };
+		34A4BB2320EEE76F00ACA759 /* SKTexture+Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4BB2220EEE76F00ACA759 /* SKTexture+Grid.swift */; };
+		34A4BB2B20EEE85500ACA759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4BB2A20EEE85500ACA759 /* AppDelegate.swift */; };
+		34A4BB2D20EEE85500ACA759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4BB2C20EEE85500ACA759 /* ViewController.swift */; };
+		34A4BB3020EEE85500ACA759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A4BB2E20EEE85500ACA759 /* Main.storyboard */; };
+		34A4BB3220EEE85600ACA759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A4BB3120EEE85600ACA759 /* Assets.xcassets */; };
+		34A4BB3520EEE85600ACA759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A4BB3320EEE85600ACA759 /* LaunchScreen.storyboard */; };
+		34A4BB3A20EEEE8A00ACA759 /* GoBoardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A4BAF020EED6F600ACA759 /* GoBoardKit.framework */; };
+		34A4BB3B20EEEE8A00ACA759 /* GoBoardKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34A4BAF020EED6F600ACA759 /* GoBoardKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,28 @@
 			remoteGlobalIDString = 34A4BAEF20EED6F600ACA759;
 			remoteInfo = GoBoardKit;
 		};
+		34A4BB3C20EEEE8A00ACA759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34A4BAE720EED6F600ACA759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34A4BAEF20EED6F600ACA759;
+			remoteInfo = GoBoardKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34A4BB3E20EEEE8A00ACA759 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34A4BB3B20EEEE8A00ACA759 /* GoBoardKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		34A4BAF020EED6F600ACA759 /* GoBoardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoBoardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +78,16 @@
 		34A4BB0020EED6F600ACA759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A4BB0A20EED92400ACA759 /* GoBoardScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBoardScene.swift; sourceTree = "<group>"; };
 		34A4BB0D20EED93B00ACA759 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		34A4BB1E20EEE58800ACA759 /* GridNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridNode.swift; sourceTree = "<group>"; };
+		34A4BB2020EEE6E600ACA759 /* GridPositioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPositioner.swift; sourceTree = "<group>"; };
+		34A4BB2220EEE76F00ACA759 /* SKTexture+Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTexture+Grid.swift"; sourceTree = "<group>"; };
+		34A4BB2820EEE85500ACA759 /* GoBoardPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoBoardPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A4BB2A20EEE85500ACA759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34A4BB2C20EEE85500ACA759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34A4BB2F20EEE85500ACA759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34A4BB3120EEE85600ACA759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34A4BB3420EEE85600ACA759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34A4BB3620EEE85600ACA759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34A4BB2520EEE85500ACA759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A4BB3A20EEEE8A00ACA759 /* GoBoardKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +123,7 @@
 			children = (
 				34A4BAF220EED6F600ACA759 /* GoBoardKit */,
 				34A4BAFD20EED6F600ACA759 /* GoBoardKitTests */,
+				34A4BB2920EEE85500ACA759 /* GoBoardPlayground */,
 				34A4BAF120EED6F600ACA759 /* Products */,
 				34A4BB0C20EED93B00ACA759 /* Frameworks */,
 			);
@@ -84,6 +134,7 @@
 			children = (
 				34A4BAF020EED6F600ACA759 /* GoBoardKit.framework */,
 				34A4BAF920EED6F600ACA759 /* GoBoardKitTests.xctest */,
+				34A4BB2820EEE85500ACA759 /* GoBoardPlayground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +145,9 @@
 				34A4BAF320EED6F600ACA759 /* GoBoardKit.h */,
 				34A4BAF420EED6F600ACA759 /* Info.plist */,
 				34A4BB0A20EED92400ACA759 /* GoBoardScene.swift */,
+				34A4BB1E20EEE58800ACA759 /* GridNode.swift */,
+				34A4BB2020EEE6E600ACA759 /* GridPositioner.swift */,
+				34A4BB2220EEE76F00ACA759 /* SKTexture+Grid.swift */,
 			);
 			path = GoBoardKit;
 			sourceTree = "<group>";
@@ -113,6 +167,19 @@
 				34A4BB0D20EED93B00ACA759 /* SpriteKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34A4BB2920EEE85500ACA759 /* GoBoardPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				34A4BB2A20EEE85500ACA759 /* AppDelegate.swift */,
+				34A4BB2C20EEE85500ACA759 /* ViewController.swift */,
+				34A4BB2E20EEE85500ACA759 /* Main.storyboard */,
+				34A4BB3120EEE85600ACA759 /* Assets.xcassets */,
+				34A4BB3320EEE85600ACA759 /* LaunchScreen.storyboard */,
+				34A4BB3620EEE85600ACA759 /* Info.plist */,
+			);
+			path = GoBoardPlayground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +232,25 @@
 			productReference = 34A4BAF920EED6F600ACA759 /* GoBoardKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		34A4BB2720EEE85500ACA759 /* GoBoardPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34A4BB3720EEE85600ACA759 /* Build configuration list for PBXNativeTarget "GoBoardPlayground" */;
+			buildPhases = (
+				34A4BB2420EEE85500ACA759 /* Sources */,
+				34A4BB2520EEE85500ACA759 /* Frameworks */,
+				34A4BB2620EEE85500ACA759 /* Resources */,
+				34A4BB3E20EEEE8A00ACA759 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34A4BB3D20EEEE8A00ACA759 /* PBXTargetDependency */,
+			);
+			name = GoBoardPlayground;
+			productName = GoBoardPlayground;
+			productReference = 34A4BB2820EEE85500ACA759 /* GoBoardPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,6 +271,9 @@
 					34A4BB0F20EEDA3A00ACA759 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
+					34A4BB2720EEE85500ACA759 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 34A4BAEA20EED6F600ACA759 /* Build configuration list for PBXProject "GoBoardKit" */;
@@ -193,6 +282,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 34A4BAE620EED6F600ACA759;
 			productRefGroup = 34A4BAF120EED6F600ACA759 /* Products */;
@@ -202,6 +292,7 @@
 				34A4BAEF20EED6F600ACA759 /* GoBoardKit */,
 				34A4BAF820EED6F600ACA759 /* GoBoardKitTests */,
 				34A4BB0F20EEDA3A00ACA759 /* GoBoardKitUniversal */,
+				34A4BB2720EEE85500ACA759 /* GoBoardPlayground */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +309,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A4BB2620EEE85500ACA759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A4BB3520EEE85600ACA759 /* LaunchScreen.storyboard in Resources */,
+				34A4BB3220EEE85600ACA759 /* Assets.xcassets in Resources */,
+				34A4BB3020EEE85500ACA759 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A4BB0B20EED92400ACA759 /* GoBoardScene.swift in Sources */,
+				34A4BB1F20EEE58800ACA759 /* GridNode.swift in Sources */,
+				34A4BB2120EEE6E600ACA759 /* GridPositioner.swift in Sources */,
+				34A4BB2320EEE76F00ACA759 /* SKTexture+Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +361,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34A4BB2420EEE85500ACA759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A4BB2D20EEE85500ACA759 /* ViewController.swift in Sources */,
+				34A4BB2B20EEE85500ACA759 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,7 +378,31 @@
 			target = 34A4BAEF20EED6F600ACA759 /* GoBoardKit */;
 			targetProxy = 34A4BAFB20EED6F600ACA759 /* PBXContainerItemProxy */;
 		};
+		34A4BB3D20EEEE8A00ACA759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34A4BAEF20EED6F600ACA759 /* GoBoardKit */;
+			targetProxy = 34A4BB3C20EEEE8A00ACA759 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34A4BB2E20EEE85500ACA759 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34A4BB2F20EEE85500ACA759 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34A4BB3320EEE85600ACA759 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34A4BB3420EEE85600ACA759 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		34A4BB0220EED6F600ACA759 /* Debug */ = {
@@ -499,6 +636,46 @@
 			};
 			name = Release;
 		};
+		34A4BB3820EEE85600ACA759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77Q2XB2RSV;
+				INFOPLIST_FILE = GoBoardPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheeseonhead.GoBoardPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34A4BB3920EEE85600ACA759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77Q2XB2RSV;
+				INFOPLIST_FILE = GoBoardPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheeseonhead.GoBoardPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -534,6 +711,15 @@
 			buildConfigurations = (
 				34A4BB1120EEDA3A00ACA759 /* Debug */,
 				34A4BB1220EEDA3A00ACA759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34A4BB3720EEE85600ACA759 /* Build configuration list for PBXNativeTarget "GoBoardPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A4BB3820EEE85600ACA759 /* Debug */,
+				34A4BB3920EEE85600ACA759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
